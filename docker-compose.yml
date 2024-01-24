@@ -1,0 +1,22 @@
+services:
+    app:
+        build:
+            context: .
+            target: dev
+            dockerfile: ./Dockerfile
+        image: app-image
+        volumes:
+            - type: bind
+              source: ./apps
+              target: /app/apps
+            - type: bind
+              source: ./packages
+              target: /app/packages
+            - type: volume
+              source: node_modules
+              target: /app/node_modules
+        ports:
+            - 3000:3000
+        entrypoint: ['yarn', 'web-dev']
+volumes:
+    node_modules:

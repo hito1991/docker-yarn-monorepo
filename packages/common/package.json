@@ -1,0 +1,8 @@
+{
+    "name": "@mono/common",
+    "version": "0.0.0",
+    "packageManager": "yarn@4.0.2",
+    "dependencies": {
+        "@mono/ui": "*"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "docker-mono",
+    "packageManager": "yarn@4.0.2",
+    "engines": {
+        "node": ">20.5.0"
+    },
+    "workspaces": [
+        "**/apps/*",
+        "**/packages/*"
+    ],
+    "scripts": {
+        "build": "yarn workspaces foreach --topological --verbose run build",
+        "web-dev": "yarn workspace web dev",
+        "web-build": "yarn workspace web build",
+        "web": "yarn workspace web start"
+    },
+    "dependencies": {
+        "corepack": "^0.24.1"
+    }
+}
