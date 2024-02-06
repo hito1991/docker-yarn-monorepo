@@ -10,6 +10,7 @@
     ],
     "scripts": {
         "build": "yarn workspaces foreach --topological --verbose run build",
+        "web-install": "yarn workspace web install",
         "web-dev": "yarn workspace web dev",
         "web-build": "yarn workspace web build",
         "web": "yarn workspace web start"

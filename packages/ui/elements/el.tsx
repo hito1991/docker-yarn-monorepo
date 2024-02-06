@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-const El = (props) => {
+const El = () => {
     return <div>yahhhhh ui</div>
 }
 

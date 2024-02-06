@@ -45,7 +45,7 @@ export default async function Page() {
             <HeaderContainer />
             <div>
                 <h1>Test SSR page</h1>
-                <p>{result?.time}</p>
+                {/* <p>{result?.time}</p> */}
                 {/* <p>{res.status}</p> */}
                 {/* <p>{result.title}</p>
                 <img src={result.thumbnail} alt='' /> */}

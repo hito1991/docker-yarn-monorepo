@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { ReactNode } from 'react'
 import { Provider } from 'react-redux'
 
-import { User } from '@/types/user'
+// import { User } from '@/types/user'
 
 // import { useAppDispatch } from '@/store/hooks'
 import store from '@/store'

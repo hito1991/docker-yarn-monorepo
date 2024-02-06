@@ -1,0 +1,10 @@
+services:
+    web:
+        container_name: web-service-prod
+        image: web-service-prod
+        build:
+            context: .
+            dockerfile: ./Dockerfile.web.build
+        restart: always
+        ports:
+            - 4444:4444

@@ -1,10 +1,11 @@
 services:
-    app:
+    web-service:
+        container_name: web-service
+        image: web-service
         build:
             context: .
             target: dev
             dockerfile: ./Dockerfile
-        image: app-image
         volumes:
             - type: bind
               source: ./apps
