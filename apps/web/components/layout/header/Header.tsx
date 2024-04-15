@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import Link from 'next/link'
 import { User } from '@/features/user/types'
-const Header: FC = memo(async () => {
+const Header: FC = memo(() => {
     // console.log(props)
     // const dispatch = useDispatch()
     // const sss = await useSelector((state: any) => state.user)

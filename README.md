@@ -1,3 +1,18 @@
+### Versions
+
+```
+node: 20.5.0
+yarn: 4.0.2
+```
+
+## scripts
+
+```
+yarn (init)
+yarn web-dev (local)
+
+```
+
 ### base compose run
 
 ```
@@ -19,7 +34,7 @@ $ docker exec -it next-app sh
 
 ```
 
-docker build -t web-service -f apps/web/Dockerfile .
+docker build -t web-service -f Dockerfile.web.build . --progress=plain
 docker run --rm --publish 3000:3000 -e HOSTNAME=localhost web-service
 ```
 

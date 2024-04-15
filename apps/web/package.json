@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "install": "yarn",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
@@ -13,6 +12,8 @@
         "@mono/common": "*",
         "@mono/ui": "*",
         "@reduxjs/toolkit": "^2.0.1",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
+        "babel-eslint": "^10.1.0",
         "next": "14.1.0",
         "nrstate": "^1.0.2",
         "prettier": "^3.2.2",
@@ -22,7 +23,7 @@
         "redux": "^5.0.1"
     },
     "devDependencies": {
-		"@mono/tsconfig": "*",
+        "@mono/tsconfig": "*",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
