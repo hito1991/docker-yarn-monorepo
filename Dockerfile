@@ -1,4 +1,4 @@
-ARG NODE_VERSION=20
+ARG NODE_VERSION=20.5.0
 
 FROM --platform=linux/amd64 node:$NODE_VERSION-bookworm-slim as dev
 ARG YARN_VERSION=4.0.2

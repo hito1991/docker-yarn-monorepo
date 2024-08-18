@@ -1,5 +1,5 @@
 services:
-    web:
+    web-service:
         container_name: web-service-prod
         image: web-service-prod
         build:
